@@ -1,0 +1,578 @@
+// lin-height 
+
+.font-secondary{
+  font-family: var(--wm-font-family-secondary);
+}
+
+.text-gradient {
+  background: var(--wm-text-liner-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.lh-58.app-label {
+  line-height: var(--lh-58);
+}
+
+.lh-26.app-label {
+  line-height: var(--lh-26);
+}
+
+.lh-24.app-label {
+  line-height: var(--lh-24);
+}
+
+.lh-22.app-label {
+  line-height: var(--lh-22);
+}
+
+.lh-20.app-label {
+  line-height: var(--lh-20);
+}
+
+.lh-18-2.app-label {
+  line-height: var(--lh-18-2);
+}
+
+.lh-18.app-label {
+  line-height: var(--lh-18);
+}
+
+.lh-15-7.app-label {
+  line-height: var(--lh-15-7);
+}
+
+.lh-14-5.app-label {
+  line-height: var(--lh-14-5);
+}
+
+.lh-normal.app-label {
+  line-height: var(--lh-normal);
+}
+
+
+.list-item-icon .app-icon{
+  font-size: var(--wm-h2-font-size);
+  width: 24px;
+  height: 24px;
+  color: var(--wm-color-secondary);
+  font-weight: 500;
+}
+
+
+ .app-header .app-grid-layout>.app-grid-row>.app-grid-column[name=headerleft] .app-logo:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--wm-color-primary);
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+ .app-header .app-grid-layout>.app-grid-row>.app-grid-column[name=headerleft] .app-logo img, .app-mobile-header .app-grid-layout>.app-grid-row>.app-grid-column[name=headerleft] .app-logo img {
+  filter: grayscale(0) contrast(0);
+}
+
+
+
+
+
+
+
+
+    
+.flex-grid.app-grid-layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+
+.app-grid .app-datagrid .app-grid-header .app-grid-header-inner th.app-datagrid-header-cell .header-data {
+  cursor: pointer;
+  font-size: var(--wm-h6-font-size);
+  font-weight: var(--wm-font-weight-bold);
+  line-height: var(--lh-18);
+  text-align: left;
+}
+ .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    padding: 12px 18px;
+ }
+ .app-grid .table tbody tr td {
+    border-color:var(--wm-border-color);
+ }
+
+
+
+
+ .app-datanavigator .pagination.basic .pagination-next a:before, .app-datanavigator ul.pagination.basic .pagination-next a:before {
+    content: "\e90e";
+    font-family: "icomoon";
+    font-size: var(--wm-h6-font-size);
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+.app-datanavigator ul.pagination.basic .pagination-prev a:before{
+    content: "\e90f";
+    font-family: 'icomoon';
+    font-size: var(--wm-h6-font-size);
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+// weekday list
+
+.app-checkboxset.inline.list-group, .app-radioset.inline.list-group{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  .app-checkbox.checkbox{
+    width: auto;
+    & + .checkbox{
+      margin:0 0 0 2.5rem;
+    }
+  }
+}
+
+
+.form-group.caption-top .app-select-wrapper{
+  &::before{
+    top: 50%;
+  }
+  .form-control.app-select{
+    padding-right:24px;
+  }
+
+}
+
+
+
+.fc .fc-scroller-liquid-absolute {
+  overflow: hidden !important;
+  transition: all .15s ease;
+}
+
+.fc .fc-scrollgrid-section>td{
+  border-width: 0;
+}
+
+.fc .fc-daygrid-day-bg .fc-highlight{
+  background: transparent;
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+  display: none;
+}
+
+
+.box-shadow-none.app-form{
+  box-shadow: none;
+}
+
+
+
+
+.app-radioset.inline .radio+.radio{
+    margin: 0 0 0 0;
+}
+
+.text-dot-wrapper{
+  .app-label+.app-label:not(:empty){
+      padding-left: 20px;
+      &::before{
+        content: "";
+        width: 4px;
+        height: 4px;
+        background-color: var(--wm-text-muted);
+        left: -10px;
+        top: -2px;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+        
+      }
+    }
+}
+
+
+
+
+
+// issue in deployed url some parent got appended in page content and aside was having margin 
+
+ .app-content .app-content-row .app-content-column-wrapper{
+        width: ~"calc(100% - var(--wm-aside-panel-width))";
+        height: 100%;
+        max-height: 100vh;
+        overflow: auto;
+        left: var(--wm-aside-panel-width);
+  .app-page-content{
+    height: 100%;
+  }
+}
+
+
+
+
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step.current{
+  width: auto;
+}
+
+
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step:last-child::before{
+  display: none;
+}
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step::before {
+  left: 100% !important;
+  width: 100% !important;
+  top: 25px;
+}
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step a {
+  background-color: transparent;
+  padding-left: 56px;
+  max-width: 100%;
+  width: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  background: var(--wm-app-steps-bg) !important;
+}
+
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step a .wizard-step-number{
+  left: 12px;
+}
+
+.app-wizard.number:not(.vertical) .app-wizard-body {
+  height:auto;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  .app-wizard-step-content {
+    min-height: var(--wm-horizontal-wizard-content-height);
+    max-width: var(--wm-horizontal-wizard-content-max-wd);
+    margin: 0 auto;
+  }
+  .app-form,
+  .app-liveform,
+  .app-livefilter {
+    background-color: transparent;
+    .form-body {
+      padding: 0;
+    }
+  }
+}
+
+.app-wizard.number:not(.vertical) .app-wizard-actions { 
+  &.panel-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 40px;
+    border-top: 1px solid var(--wm-border-color);
+    border-radius: 0;
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+    // margin-top: -88px;
+    border-radius: 0 0 var(--border-radius-16) var(--border-radius-16);
+  }
+  .btn {
+    min-width: 132px;
+    text-transform: capitalize;
+    min-height: 40px;
+    // color: var(--wm-text-color);
+    font-size: var(--wm-font-13);
+    font-weight: var(--wm-font-weight-bold);
+    .app-icon {
+      display: none;
+    }
+    +.btn{
+      margin-left: 16px;
+    }
+    &.btn-default+.btn-default{
+      background: var(--wm-color-grey);
+      border-color: var(--wm-color-grey);
+      &:hover {
+       
+      }
+    }
+ 
+  }
+}
+
+
+.app-wizard.number:not(.vertical) .app-wizard-steps .app-wizard-step{
+  width: auto;
+}
+
+.box-shadow-none.app-form.app-panel .panel-body.form-body .app-grid-layout .app-grid-row .app-grid-column{
+  +.app-grid-column{
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+}
+
+.app-wizard.number:not(.vertical) .app-wizard-body .app-wizard-step-content.payment-step{
+  min-height: auto;
+}
+
+
+//page layout
+
+
+
+
+
+
+.app-container.wm-aside-history {
+  max-width: var(--wm-chat-history-width);
+  height: 100%;
+  background: rgba(245, 245, 245, 1);
+  .container-list-header{
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+  }
+  .wm-history-list.app-livelist{
+    padding: var(--wm-space-0);
+    max-height: ~"calc(100% - 78px)";
+    overflow: auto;
+    .app-list-item{
+      padding: var(--wm-space-4);
+      border-radius: 12px;
+      &:hover,&:focus,&.active{
+        background-color:rgba(222, 227, 220, 1);
+      }
+    }
+  }
+}
+
+.app-container.wm-main-section {
+  width: 100%;
+  padding: 1.5rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.chat-expand .wm-left-section{
+  max-width: var(--wm-chat-history-width);
+  position: fixed;
+  height: 100%;
+  left: var(--wm-aside-panel-width);
+}
+
+.chat-expand .app-container.wm-main-section{
+  width: ~"calc(100% - var(--wm-chat-history-width))";
+  left: var(--wm-chat-history-width);
+  max-width: 100%;
+  margin: 0;
+}
+
+
+.form-control.app-textarea.wm-chat-input {
+  resize: none;
+  min-height: 200px;
+  padding-bottom: 4rem;
+  border: none;
+  border-radius: var(--border-radius-16);
+  background-color: var(--wm-color-contrast-light);
+  color: var(--wm-text-color);
+}
+
+wm-textarea.app-input-wrapper:has(.wm-chat-input) {
+    background: var(--wm-border-gradient);
+    background-clip: padding-box, border-box;
+    border-radius: var(--border-radius-16);
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 3px 100px 0px rgba(23, 26, 31, 0.1);
+    padding: 1px;
+    border: none;
+}
+
+.app-container.wm-chat-action {
+  position: absolute;
+  width: ~"calc(100% - 40px)";
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.wm-genie-app-list.app-livelist 
+ul.list-group{
+  justify-content: center;
+  li.app-list-item {
+    width: 20%;
+    min-height: 124px;
+    &:first-child .app-card{
+      background: var(--wm-card-gradient);
+    }
+  }
+}
+
+
+.app-fileupload .app-multi-file-upload .app-anchor:not(.text-muted), .app-list .app-list-item.active.list-group-item .app-anchor:not(.text-muted), .app-list .app-list-item.active.list-group-item .app-label:not(.text-muted), .app-livelist .app-list-item.active.list-group-item .app-anchor:not(.text-muted), .app-livelist .app-list-item.active.list-group-item .app-label:not(.text-muted){
+  color: var(--wm-text-color);
+}
+.app-list .app-list-item.active.list-group-item .app-icon, .app-list .app-list-item.active.list-group-item .app-label, .app-livelist .app-list-item.active.list-group-item .app-icon, .app-livelist .app-list-item.active.list-group-item .app-label{
+  opacity: 1;
+}
+
+.wm-filter-form.app-form .form-body .app-grid-layout .app-grid-row {
+  width: 33%;
+  display: inline-flex;
+  padding: 0 0.5rem;
+}
+
+
+.wm-list-dynamic.app-livelist {
+  ul li ul ul li::before{
+    content:"";
+    width: 8px;
+    height: 8px;
+    position:absolute;
+    left: 4px;
+    top: 6px;
+    border: 1px solid var(--wm-color-primary-20);
+    background: var(--wm-color-primary-20);
+    border-radius: 50%;
+  }
+  ul.list-group {
+    margin-top: 0.5rem;
+    .app-list-item{
+      margin: 0.25rem;
+    }
+  }
+}
+
+
+.app-accordion .app-accordion-panel{
+  box-shadow: none;
+}
+ .app-accordion .app-accordion-panel.panel+.panel {
+  margin-top: 12px
+}
+
+ .app-accordion .app-accordion-panel.panel>.panel-heading {
+  color: var(--wm-text-color);
+  background-color:~"color-mix(in srgb, var(--wm-color-primary), var(--wm-color-contrast-light) 90%)";
+  border-radius: 8px;
+  border-left: 4px solid var(--wm-color-primary);
+  display: flex;
+  align-items: center
+}
+
+.app-accordion .app-accordion-panel.panel:has(.collapse.in){
+  box-shadow: 0px 10px 30px 0px rgba(181, 190, 199, 0.3);
+  >.panel-heading {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+
+
+
+.label-container {
+  width: 100%;
+  
+}
+
+.skeleton-loader {
+  width: 100%;
+  padding: .5rem 1.5rem;
+}
+
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -150%;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(to right, transparent 0%, #f0f0f0 50%, transparent 100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+      transform: translateX(150%);
+  }
+}
+
+.paragraph-line {
+  height: 10px;
+}
+
+.short-line {
+  width: 75%;
+}
+
+.paragraph-line:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+&.wm-dark-theme {
+  .app-left-panel{
+    
+  }
+.app-content .app-content-row .app-content-column{
+  background-color: var(--color-dark);
+}
+.app-livelist .app-label{
+ color: var(--color-white);
+}
+
+.app-grid .table tbody tr td {
+  color: var(--wm-text-color);
+  background: var(--wm-color-contrast-light);
+}
+
+.app-livelist .list-group .app-list-item-group .item-group .list-group-header{
+  background-color: rgba(255, 255, 255, .5);
+  --wm-heading-text-color:#fff;
+}
+.list-group-item.active{
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.app-chart.panel,.wm-table-pie.app-chart{
+  background-color: #fff;
+}
+.table.table-hover tbody tr:hover,.table.table-hover tbody tr:focus,.table.table-hover tbody tr:active,.table.table-hover tbody tr.active {
+  background: tan;
+}
+.app-container.wm-aside-history {
+  background: #767676;
+}
+.app-container.wm-aside-history .wm-history-list.app-livelist .app-list-item:hover, .app-container.wm-aside-history .wm-history-list.app-livelist .app-list-item:focus, .app-container.wm-aside-history .wm-history-list.app-livelist .app-list-item.active{
+  background-color: tan;
+}
+.btn-success.btn,.btn-primary.btn{
+  --wm-btn-text-color: #fff;
+}
+
+
+}
